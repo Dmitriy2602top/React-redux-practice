@@ -5,6 +5,7 @@ module.exports = {
         container: { center: true, padding: '3rem' },
         screens: { lg: { max: '992px' }, md: { max: '768px' }, sm: { max: '480px' } },
         fontSize: {
+            12: '0.75rem',
             14: '0.875rem',
             16: '1rem',
             18: '1.125rem',
@@ -13,6 +14,7 @@ module.exports = {
             23: '1.438rem',
             24: '1.5rem',
             28: '1.75rem',
+            30: '1.875rem',
             32: '2rem',
             44: '2.75rem',
             50: '3.125rem',
