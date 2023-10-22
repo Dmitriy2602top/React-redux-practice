@@ -3,6 +3,9 @@
 @import 'tailwindcss/utilities';
 
 @layer base {
+    :root {
+        --padding-behind: calc((100vw - 84rem) / 2);
+    }
     .container {
         @apply max-w-[1440px];
     }

@@ -1,5 +1,8 @@
+import classNames from 'classnames';
+import { type FC } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { selectParameters } from 'shared/assets/selectParameters/selectParameters';
+import { type PropsOf } from 'shared/lib';
 import { Button, ButtonType } from 'shared/ui/button/Button';
 import MyInput, { InputType } from 'shared/ui/input/Input';
 import MySelect from 'shared/ui/select/MySelect';
@@ -15,7 +18,9 @@ interface UserFormJson {
     addIndormation: string;
 }
 
-const UserForm = () => {
+interface UserFormProps extends PropsOf<'div'> {}
+
+const UserForm: FC<UserFormProps> = ({ className }) => {
     const {
         formState: { errors },
         handleSubmit,
@@ -27,7 +32,7 @@ const UserForm = () => {
     };
 
     return (
-        <div className='w-full px-7 py-5 rounded-4 bg-white'>
+        <div className={classNames('w-full px-7 py-5 rounded-4 shadow-forms translate-y-5 bg-white', className)}>
             <h4 className='text-btn-blue text-center font-700 text-24 uppercase'>REQUEST A PACKAGE</h4>
             <form onSubmit={handleSubmit(onSubmit)} className='grid mt-5 text-text-form gap-3 grid-cols-2'>
                 <div>

@@ -16,14 +16,30 @@ interface YachtCharterProps {
 export const YachtCharter: FC<YachtCharterProps> = ({ title, topText, bottomText }) => {
     return (
         <div className='relative overflow-hidden pb-12'>
-            <img className='absolute top-0 left-0 -z-10 w-full' src={bgFon} alt='YACHT CHARTER PHUKET' />
+            <img
+                className='absolute top-0 left-0 h-full object-cover -z-10 w-full'
+                src={bgFon}
+                alt='YACHT CHARTER PHUKET'
+            />
+            <div className='absolute flex bottom-0 left-0 -z-10 w-full'>
+                <div className='w-behind bg-bg-primary'></div>
+                <div className='grid grow shrink grid-cols-4 '>
+                    <div className='col-span-1 text-white uppercase text-30 py-5 px-4 font-700 text-center'>
+                        <h3>FEATURED YACHTS</h3>
+                    </div>
+                    <div className='col-span-3 pl-6 flex items-end bg-bg-primary text-text-found font-600'>
+                        <p>Found 25 yachts</p>
+                    </div>
+                </div>
+                <div className='w-behind bg-bg-primary'></div>
+            </div>
             <div className='flex justify-between container pt-14'>
-                <div className='flex flex-col gap-3 text-white'>
+                <div className='flex flex-col gap-3 max-w-yachtTitle text-white'>
                     <h4 className='text-18 font-700 uppercase leading-133%'>{topText}</h4>
                     <h1 className='text-58 font-700 uppercase'>{title}</h1>
-                    <p className='text-18 font-600 uppercase leading-133%'>{bottomText}</p>
+                    <p className='text-18 font-600 leading-133%'>{bottomText}</p>
                 </div>
-                <div className='gap-11 flex flex-col items-center w-[526px]'>
+                <div className='gap-11 flex flex-col items-center'>
                     <div className='flex flex-col gap-5'>
                         <h5 className='text-text-secondary text-center'>Write to US</h5>
                         <div className='flex gap-5'>
