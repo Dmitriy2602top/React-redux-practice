@@ -3,9 +3,9 @@ import { type FC } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { selectParameters } from 'shared/assets/selectParameters/selectParameters';
 import { type PropsOf } from 'shared/lib';
+import { MySelect } from 'shared/ui';
 import { Button, ButtonType } from 'shared/ui/button/Button';
-import MyInput, { InputType } from 'shared/ui/input/Input';
-import MySelect from 'shared/ui/select/MySelect';
+import { InputType, MyInput } from 'shared/ui/input/Input';
 
 interface UserFormJson {
     firstName: string;
@@ -20,7 +20,7 @@ interface UserFormJson {
 
 interface UserFormProps extends PropsOf<'div'> {}
 
-const UserForm: FC<UserFormProps> = ({ className }) => {
+export const UserForm: FC<UserFormProps> = ({ className }) => {
     const {
         formState: { errors },
         handleSubmit,
@@ -144,5 +144,3 @@ const UserForm: FC<UserFormProps> = ({ className }) => {
         </div>
     );
 };
-
-export default UserForm;

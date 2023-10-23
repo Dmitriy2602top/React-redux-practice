@@ -10,6 +10,7 @@
         "analyze:prod": "webpack --env mode=production --env analyze=true",
         "build:dev": "webpack --env mode=development",
         "analyze:dev": "webpack --env mode=development --env analyze=true",
+        "server": "json-server -w server/shipsCards.json -p 3001",
         "lint": "eslint \"**/*.{ts,tsx}\"",
         "lint:fix": "eslint \"**/*.{ts,tsx}\" --fix",
         "prepare": "husky install"
@@ -22,6 +23,7 @@
         "i18next-browser-languagedetector": "^7.0.2",
         "i18next-http-backend": "^2.2.1",
         "i18next-intervalplural-postprocessor": "^3.0.0",
+        "json-server": "^0.17.4",
         "loglevel": "^1.8.1",
         "loglevel-plugin-prefix": "^0.8.4",
         "react": "^18.2.0",

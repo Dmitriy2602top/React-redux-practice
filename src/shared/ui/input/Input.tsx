@@ -12,7 +12,7 @@ type textareaProps = PropsOf<'textarea'>;
 
 export type DynamicInputProps = (inputProps | textareaProps) & { types?: ObjectValues<typeof InputType> };
 
-const MyInput: FC<DynamicInputProps> = ({ className, types = InputType.formInput, ...props }) => {
+export const MyInput: FC<DynamicInputProps> = ({ className, types = InputType.formInput, ...props }) => {
     const styles = useMemo(
         () =>
             classNames(
@@ -27,5 +27,3 @@ const MyInput: FC<DynamicInputProps> = ({ className, types = InputType.formInput
     if (types === InputType.formInput) return <input {...(props as inputProps)} className={styles} />;
     return <textarea {...(props as textareaProps)} className={styles} />;
 };
-
-export default MyInput;

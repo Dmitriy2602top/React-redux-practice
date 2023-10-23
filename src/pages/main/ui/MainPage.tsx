@@ -1,5 +1,6 @@
+import { FeaturedYachts } from 'widgets/featuredYachts';
 import { Header } from 'widgets/header/ui/Header';
-import { YachtCharter } from 'widgets/yachtCharter/ui/YachtCharter';
+import { YachtCharter } from 'widgets/yachtCharter';
 
 const MainPage: React.FC = () => {
     return (
@@ -11,6 +12,7 @@ const MainPage: React.FC = () => {
                     topText='LUXURY BOAT HIRE IN PHUKET'
                     title='YACHT CHARTER PHUKET'
                 />
+                <FeaturedYachts />
             </main>
         </div>
     );

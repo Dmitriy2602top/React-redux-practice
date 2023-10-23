@@ -10,7 +10,7 @@ type OptionProps = PropsOf<'option'>;
 
 export type SelectOptionProps = (SelectProps | OptionProps) & SelectPropsOption;
 
-const MySelect: FC<SelectOptionProps> = ({ className, options, ...props }) => {
+export const MySelect: FC<SelectOptionProps> = ({ className, options, ...props }) => {
     return (
         <select
             className={classNames('bg-bg-input text-text-form text-12 font-400 rounded-4 px-3 py-2', className)}
@@ -22,5 +22,3 @@ const MySelect: FC<SelectOptionProps> = ({ className, options, ...props }) => {
         </select>
     );
 };
-
-export default MySelect;

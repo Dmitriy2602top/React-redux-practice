@@ -1,6 +1,5 @@
 import { type FC } from 'react';
-import { useForm } from 'react-hook-form';
-import UserForm from 'features/UserForm/ui/UserForm';
+import { UserForm } from 'features/UserForm';
 import Insta from 'shared/assets/icons/instaM.svg';
 import Telega from 'shared/assets/icons/telegramM.svg';
 import Watsap from 'shared/assets/icons/watsapM.svg';
@@ -21,17 +20,17 @@ export const YachtCharter: FC<YachtCharterProps> = ({ title, topText, bottomText
                 src={bgFon}
                 alt='YACHT CHARTER PHUKET'
             />
-            <div className='absolute flex bottom-0 left-0 -z-10 w-full'>
-                <div className='w-behind bg-bg-primary'></div>
-                <div className='grid grow shrink grid-cols-4 '>
-                    <div className='col-span-1 text-white uppercase text-30 py-5 px-4 font-700 text-center'>
+            <div className='absolute flex bottom-0  left-0 -z-10 w-full'>
+                <div className='grow bg-bg-primary'></div>
+                <div className='grid container bg-bg-primary gap-6 shrink grid-cols-4 '>
+                    <div className='col-span-1 bg-black text-white uppercase text-30 py-5 font-700 text-center'>
                         <h3>FEATURED YACHTS</h3>
                     </div>
-                    <div className='col-span-3 pl-6 flex items-end bg-bg-primary text-text-found font-600'>
+                    <div className='col-span-3 flex items-end bg-bg-primary text-text-found font-600'>
                         <p>Found 25 yachts</p>
                     </div>
                 </div>
-                <div className='w-behind bg-bg-primary'></div>
+                <div className='grow bg-bg-primary'></div>
             </div>
             <div className='flex justify-between container pt-14'>
                 <div className='flex flex-col gap-3 max-w-yachtTitle text-white'>
