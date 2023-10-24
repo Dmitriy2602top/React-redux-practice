@@ -14,6 +14,7 @@ interface SelectParameters {
 }
 
 export const selectParameters: SelectParameters = {
+    // REQUEST
     yachtType: ['Motor', 'parus', 'vesla'],
     numberDays: NumberGeneratorMassive(10),
     budget: ['0-100000', '100000-200000', '200000<'],

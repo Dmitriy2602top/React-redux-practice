@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import { type FC } from 'react';
 import dashed from 'shared/assets/icons/dashedLine.svg';
-import Ship from 'shared/assets/image/ship.jpg';
 import { type PropsOf } from 'shared/lib';
 
 interface CardShipProps extends PropsOf<'div'> {
@@ -13,11 +12,13 @@ interface CardShipProps extends PropsOf<'div'> {
     cruisSpeed: string;
     Crew: number;
     current: number;
+    image: string;
 }
 
 export const CardShip: FC<CardShipProps> = ({
     nameShip,
     lengthShip,
+    image,
     guestDay,
     Crew,
     cruisSpeed,
@@ -27,12 +28,12 @@ export const CardShip: FC<CardShipProps> = ({
     ...props
 }) => {
     return (
-        <div {...props} className='rounded-4 grow  text-text-gray bg-white'>
+        <div {...props} className='rounded-4 grow text-text-gray bg-white'>
             <div className='flex-col px-6 py-5 flex gap-1'>
-                <h1 className='text-22 font-700 text-text-accent capitalize'>TITANIA 72M</h1>
+                <h1 className='text-22 font-700 text-text-accent capitalize'>{nameShip}</h1>
                 <p className='text-14 font-600 capitalize'>Length: 236 ft 3 in ({lengthShip})M</p>
             </div>
-            <img className='w-full mt-3' src={Ship} alt='Ship' />
+            <img className='w-full mt-3' src={image} alt='Ship' />
             <div className='flex px-6 py-5 flex-col gap-1 mt-6'>
                 <div className='flex flex-col gap-1'>
                     <div className={classNames('flex justify-between')}>
@@ -69,13 +70,14 @@ export const CardShip: FC<CardShipProps> = ({
                     </div>
                     <img src={dashed} />
                 </div>
-                <div className='flex justify-between'>
+                <div className='flex justify-between items-center mt-4 mb-4'>
                     <div className='uppercase text-20 font-600'>
                         <span className='text-text-accent'>THB </span> <span className='text-text-form'>{current}</span>
                     </div>
-                    <button className='bg-bg-blue capitalize py-4 px-6'>veiw</button>
+                    <button className='bg-bg-blue rounded-4 capitalize text-white py-4 px-6'>veiw</button>
                 </div>
             </div>
+            <div className='bg-bg-blue rounded-bl-4 rounded-br-4 w-full rou h-5'></div>
         </div>
     );
 };
