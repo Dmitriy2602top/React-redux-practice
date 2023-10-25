@@ -1,5 +1,5 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import { shipsApi } from 'entities/choiceCardShips/api/shipsService';
+import { shipsApi } from 'entities/choiceCardShips';
 
 const rootReducer = combineReducers({
     [shipsApi.reducerPath]: shipsApi.reducer,

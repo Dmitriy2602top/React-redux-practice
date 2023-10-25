@@ -1,2 +1,2 @@
-import { shipsApi } from './api/shipsService';
-import { ChoiceCardShips } from './ui/ChoiceCardShips';
+export { shipsApi } from './api/shipsService';
+export { ChoiceCardShips } from './ui/ChoiceCardShips';
