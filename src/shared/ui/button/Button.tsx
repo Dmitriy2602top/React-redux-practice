@@ -22,7 +22,7 @@ export const Button: FC<ButtonProps> = ({ className, type = ButtonType.blank, ..
         () =>
             classNames(
                 'flex justify-center leading-5 items-center',
-                type === ButtonType.blank && 'text-btn-blue text-18 font-700',
+                type === ButtonType.blank && 'text-btn-blue text-18 font-700 underline',
                 type === ButtonType.submit && 'px-6 flex-grow py-4 rounded-4 bg-btn-blue text-white font-600 text-20',
                 type === ButtonType.view && 'px-6 flex-grow py-4 rounded-4 bg-white text-btn-blue font-600 text-20',
                 className

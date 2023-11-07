@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { type ICard } from '../ui/ChoiceCardShips';
+import { type ICard, type ISlider } from 'shared/models/types';
 
-export const shipsApi = createApi({
+export const apiService = createApi({
     reducerPath: 'shipsApi',
     baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3001' }),
     endpoints: build => ({
@@ -11,6 +11,11 @@ export const shipsApi = createApi({
                 params: {
                     _limit: limit,
                 },
+            }),
+        }),
+        fetchAllPosts: build.query<ISlider[], any>({
+            query: () => ({
+                url: '/sliders',
             }),
         }),
     }),

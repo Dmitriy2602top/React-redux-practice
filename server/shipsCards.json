@@ -1,6 +1,7 @@
 {"ships": [
   {
     "id": 1,
+    "YachtType" : "Motor",
     "NameShip": "Starship Voyager",
     "GuestDay": 10,
     "GuestSleeping": 4,
@@ -9,10 +10,11 @@
     "Crew": 2,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 100,
-    "current": "13253000"
+    "budget": 13253000
   },
   {
-    "id": 2,
+    "id": 2, 
+    "YachtType" : "Motor",
     "NameShip": "Galactic Odyssey",
     "GuestDay": 12,
     "GuestSleeping": 6,
@@ -21,10 +23,11 @@
     "Crew": 3,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 110,
-    "current": "14253000"
+    "budget": 14253000
   },
   {
     "id": 3,
+    "YachtType" : "Motor",
     "NameShip": "Nebula Explorer",
     "GuestDay": 8,
     "GuestSleeping": 4,
@@ -33,10 +36,11 @@
     "Crew": 2,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 95,
-    "current": "12253000"
+    "budget": 12253000
   },
   {
     "id": 4,
+    "YachtType" : "parus",
     "NameShip": "Celestial Traveler",
     "GuestDay": 15,
     "GuestSleeping": 8,
@@ -45,10 +49,11 @@
     "Crew": 4,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 120,
-    "current": "15253000"
+    "budget": 15253000
   },
   {
     "id": 5,
+    "YachtType" : "vesla",
     "NameShip": "Cosmic Cruiser",
     "GuestDay": 10,
     "GuestSleeping": 4,
@@ -57,10 +62,11 @@
     "Crew": 2,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 100,
-    "current": "13253000"
+    "budget": 13253000
   },
   {
     "id": 6,
+    "YachtType" : "Motor",
     "NameShip": "Space Adventurer",
     "GuestDay": 12,
     "GuestSleeping": 6,
@@ -69,10 +75,11 @@
     "Crew": 3,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 110,
-    "current": "14253000"
+    "budget": 14253000
   },
   {
     "id": 7,
+    "YachtType" : "parus",
     "NameShip": "Starship Explorer",
     "GuestDay": 11,
     "GuestSleeping": 5,
@@ -81,10 +88,11 @@
     "Crew": 2,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 105,
-    "current": "13753000"
+    "budget": 13753000
   },
   {
     "id": 8,
+    "YachtType" : "vesla",
     "NameShip": "Galactic Voyager",
     "GuestDay": 13,
     "GuestSleeping": 7,
@@ -93,10 +101,11 @@
     "Crew": 4,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 115,
-    "current": "14753000"
+    "budget": 14753000
   },
   {
     "id": 9,
+    "YachtType" : "vesla",
     "NameShip": "Nebula Odyssey",
     "GuestDay": 9,
     "GuestSleeping": 3,
@@ -105,10 +114,11 @@
     "Crew": 2,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 97,
-    "current": "12753000"
+    "budget": 12753000
   },
   {
     "id": 10,
+    "YachtType" : "parus",
     "NameShip": "Celestial Cruiser",
     "GuestDay": 16,
     "GuestSleeping": 9,
@@ -117,10 +127,11 @@
     "Crew": 5,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 125,
-    "current": "15753000"
+    "budget": 15753000
   },
   {
     "id": 11,
+    "YachtType" : "parus",
     "NameShip": "Cosmic Explorer",
     "GuestDay": 11,
     "GuestSleeping": 5,
@@ -129,10 +140,11 @@
     "Crew": 2,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 105,
-    "current": "13253000"
+    "budget": 13253000
   },
   {
     "id": 12,
+    "YachtType" : "Motor",
     "NameShip": "Space Voyager",
     "GuestDay": 13,
     "GuestSleeping": 7,
@@ -141,6 +153,37 @@
     "Crew": 4,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGt535vBe8K-CwTbGwsGYguoJTuzWj6WkTxYlvy0YrXDoyNMmprtt2nRm1dYRWsNcJPY&usqp=CAU",
     "length": 115,
-    "current": "14253000"
+    "budget": 14253000
   }
-]}
+],
+"sliders" : [
+  { "id":1, 
+    "description": "All our yachts are privately owned and managed. Each boat hasat least 2 full time crew who guarantee their pristine conditions allyear round. We provide private island hopping trips with the top qualityyachts available to be chartered in Phuket. Contact us for more details orinformation." ,
+    "image" : "https://cdn.forbes.ru/files/photo_galleries/6-calivigny-island-in-grenada.jpg__1579599985__70663.jpg"
+  }, 
+  { "id":2, 
+    "description": "Coral Reef Island is a beautiful tropical paradise located in the Pacific Ocean. The island is covered with pristine white beaches, surrounded by crystal clear waters, and known for its diverse marine life. Here, you can enjoy incredible underwater adventures, explore a variety of corals and fish, and relax on the beach, soaking in the warm sun and cool sea breeze. It's the perfect place for a getaway and an encounter with nature at its finest.",
+    "image": "https://cdn.forbes.ru/files/photo_galleries/6-calivigny-island-in-grenada.jpg__1579599985__70663.jpg"
+  },
+  { "id":3, 
+    "description": "Tropical Paradise Island is an idyllic destination situated in the Caribbean Sea. This island boasts lush rainforests, breathtaking waterfalls, and golden sandy beaches. Visitors can explore the rich biodiversity of the rainforest, engage in thrilling water sports, and savor delicious local cuisine. Whether you seek adventure or relaxation, this island has it all.",
+    "image": "https://cdn.forbes.ru/files/photo_galleries/6-calivigny-island-in-grenada.jpg__1579599985__70663.jpg"
+  },
+  { "id":4, 
+    "description": "Volcanic Island offers a unique experience for nature enthusiasts. This island is known for its rugged terrain, geothermal activity, and lava fields. You can witness the power of nature as volcanic eruptions create new landscapes. It's a paradise for geologists and adventure seekers.",
+    "image": "https://cdn.forbes.ru/files/photo_galleries/6-calivigny-island-in-grenada.jpg__1579599985__70663.jpg"
+  },
+  { "id":5, 
+    "description": "Historic Island is a place rich in history and culture. It features ancient ruins, archaeological sites, and museums that offer insights into the island's past. Travelers can immerse themselves in the stories of the island's indigenous people and early settlers.",
+    "image": "https://cdn.forbes.ru/files/photo_galleries/6-calivigny-island-in-grenada.jpg__1579599985__70663.jpg"
+  },
+  { "id":6, 
+    "description": "Wildlife Sanctuary Island is a haven for wildlife lovers. The island is home to diverse ecosystems, including rainforests, wetlands, and coral reefs. You can spot exotic animals, colorful birds, and marine life in their natural habitats.",
+    "image": "https://cdn.forbes.ru/files/photo_galleries/6-calivigny-island-in-grenada.jpg__1579599985__70663.jpg"
+  },
+  { "id":7, 
+    "description": "Deserted Island is a remote getaway for those seeking solitude and tranquility. With no permanent residents, it offers seclusion and the opportunity to reconnect with nature. Unspoiled beaches and crystal-clear waters make it a perfect escape from the hustle and bustle of city life.",
+    "image": "https://cdn.forbes.ru/files/photo_galleries/6-calivigny-island-in-grenada.jpg__1579599985__70663.jpg"
+  }
+]
+}

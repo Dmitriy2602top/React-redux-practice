@@ -1,6 +1,7 @@
 import { FeaturedYachts } from 'widgets/featuredYachts';
 import { Footer } from 'widgets/footer';
 import { Header } from 'widgets/header';
+import { SliderBlog } from 'widgets/slider';
 import { YachtCharter } from 'widgets/yachtCharter';
 
 const MainPage: React.FC = () => {
@@ -14,6 +15,7 @@ const MainPage: React.FC = () => {
                     title='YACHT CHARTER PHUKET'
                 />
                 <FeaturedYachts />
+                <SliderBlog />
             </main>
             <Footer />
         </div>

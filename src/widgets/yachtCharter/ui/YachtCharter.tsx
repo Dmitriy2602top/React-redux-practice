@@ -49,7 +49,7 @@ export const YachtCharter: FC<YachtCharterProps> = ({ title, topText, bottomText
                     </div>
                     <div className='flex flex-col gap-5'>
                         <h5 className='text-text-secondary text-center'>Call US</h5>
-                        <Button className='text-white text-24 font-700' to={'tel:+66 86 465 4545'}>
+                        <Button className='text-white text-24 font-700 no-underline' to={'tel:+66 86 465 4545'}>
                             +66 86 465 4545
                         </Button>
                     </div>

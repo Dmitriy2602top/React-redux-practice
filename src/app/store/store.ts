@@ -1,13 +1,15 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import { shipsApi } from 'entities/choiceCardShips';
+import SearchReducer from 'features/SearchForm/models/SearchSlice';
+import { apiService } from 'shared/api';
 
 const rootReducer = combineReducers({
-    [shipsApi.reducerPath]: shipsApi.reducer,
+    [apiService.reducerPath]: apiService.reducer,
+    SearchReducer,
 });
 
 export const store = configureStore({
     reducer: rootReducer,
-    middleware: getDefaultMiddleware => getDefaultMiddleware().concat(shipsApi.middleware),
+    middleware: getDefaultMiddleware => getDefaultMiddleware().concat(apiService.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;

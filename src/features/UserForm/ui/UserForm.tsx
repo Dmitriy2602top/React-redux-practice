@@ -21,11 +21,7 @@ interface UserFormJson {
 interface UserFormProps extends PropsOf<'div'> {}
 
 export const UserForm: FC<UserFormProps> = ({ className }) => {
-    const {
-        formState: { errors },
-        handleSubmit,
-        control,
-    } = useForm<UserFormJson>();
+    const { handleSubmit, control } = useForm<UserFormJson>();
 
     const onSubmit = (data: UserFormJson) => {
         alert(JSON.stringify(data));
@@ -74,7 +70,7 @@ export const UserForm: FC<UserFormProps> = ({ className }) => {
                         name='YachtType'
                         render={({ field }) => (
                             <MySelect
-                                {...field}
+                                onChange={field.onChange}
                                 options={selectParameters.yachtType}
                                 className='mt-3 w-full border solid border-border-btn appearance-none'
                             />
@@ -90,7 +86,7 @@ export const UserForm: FC<UserFormProps> = ({ className }) => {
                         name='numberDays'
                         render={({ field }) => (
                             <MySelect
-                                {...field}
+                                onChange={field.onChange}
                                 options={selectParameters.numberDays}
                                 className='mt-3 w-full border solid border-border-btn appearance-none'
                             />
@@ -116,7 +112,7 @@ export const UserForm: FC<UserFormProps> = ({ className }) => {
                         name='budget'
                         render={({ field }) => (
                             <MySelect
-                                {...field}
+                                onChange={field.onChange}
                                 options={selectParameters.budget}
                                 className='mt-3 w-full border solid border-border-btn appearance-none'
                             />

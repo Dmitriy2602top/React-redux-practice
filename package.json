@@ -36,6 +36,7 @@
         "sass": "^1.68.0",
         "sass-loader": "^13.3.2",
         "serve": "^14.2.1",
+        "swiper": "^11.0.2",
         "universal-cookie": "^4.0.4",
         "url-loader": "^4.1.1"
     },
