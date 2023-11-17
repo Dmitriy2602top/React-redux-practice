@@ -4,13 +4,14 @@ import { type FC } from 'react';
 import { type PropsOf } from 'shared/lib';
 
 interface SelectPropsOption {
+    isDefaultOption?: boolean;
     options: Array<{ key: string | number; value: string | number | undefined }>;
 }
 type SelectProps = PropsOf<'select'>;
 type OptionProps = PropsOf<'option'>;
 export type SelectOptionProps = (SelectProps | OptionProps) & SelectPropsOption;
 
-export const MySelect: FC<SelectOptionProps> = ({ className, options, ...props }) => {
+export const MySelect: FC<SelectOptionProps> = ({ className, isDefaultOption = true, options, ...props }) => {
     return (
         <select
             defaultValue={options[0].key}
@@ -18,7 +19,11 @@ export const MySelect: FC<SelectOptionProps> = ({ className, options, ...props }
             {...(props as SelectProps)}
         >
             {options.map((option, index: number) =>
-                index === 0 ? (
+                !isDefaultOption ? (
+                    <option value={option.value} {...(props as OptionProps)} key={index}>
+                        {option.key}
+                    </option>
+                ) : index === 0 ? (
                     <option disabled value={option.value} {...(props as OptionProps)} key={index}>
                         {option.key}
                     </option>

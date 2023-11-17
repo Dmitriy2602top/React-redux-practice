@@ -15,8 +15,11 @@ interface SelectParameters {
     crew: Array<{ key: number; value: number | undefined }>;
 }
 
+interface SelectParametersCity {
+    city: Array<{ key: string; value: string }>;
+}
+
 export const selectParameters: SelectParameters = {
-    // UserForm
     yachtType: [
         { key: 'Выберите тип яхты', value: undefined },
         { key: 'Motor', value: 'Motor' },
@@ -39,4 +42,12 @@ export const selectParameters: SelectParameters = {
         { key: '120m', value: 120 },
     ],
     crew: NumberGeneratorMassive(5),
+};
+
+export const selectParametersCity: SelectParametersCity = {
+    city: [
+        { key: 'Москва', value: 'moscow' },
+        { key: 'Воронеж', value: 'voronej' },
+        { key: 'Тамбов', value: 'tambov' },
+    ],
 };

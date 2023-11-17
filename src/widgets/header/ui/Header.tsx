@@ -13,7 +13,7 @@ export const Header: FC = () => {
                     <img src={LogoName} alt='HORIZON CRUISES' />
                 </div>
                 <div className='flex gap-6 text-text-header'>
-                    <Link className='hover:text-text-header-hover' to=''>
+                    <Link className='hover:text-text-header-hover' to='/'>
                         Home
                     </Link>
                     <Link className='hover:text-text-header-hover' to=''>
@@ -22,8 +22,8 @@ export const Header: FC = () => {
                     <Link className='hover:text-text-header-hover' to=''>
                         About us
                     </Link>
-                    <Link className='hover:text-text-header-hover' to=''>
-                        Articles
+                    <Link className='hover:text-text-header-hover' to='/weather'>
+                        Weather
                     </Link>
                     <Link className='hover:text-text-header-hover' to=''>
                         Contacts

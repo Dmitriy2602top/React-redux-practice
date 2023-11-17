@@ -26,3 +26,23 @@ export interface Data {
     length: number;
     Crew: number;
 }
+
+interface WeatherPrognoz {
+    main: {
+        temp: number;
+        temp_min: number;
+        temp_max: number;
+        feels_like: number;
+        pressure: number;
+    };
+    rain: { h: number };
+    weather: [{ description: string }];
+    wind: { speed: number };
+    dt_txt: string;
+}
+
+export interface Weather {
+    cnt: number;
+    list: WeatherPrognoz[];
+    city: { name: string };
+}

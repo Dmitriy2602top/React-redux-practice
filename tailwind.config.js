@@ -6,6 +6,7 @@ module.exports = {
         screens: { xxl: { max: '1440px' }, lg: { max: '992px' }, md: { max: '768px' }, sm: { max: '480px' } },
         fontSize: {
             12: '0.75rem',
+            13: '0.81rem',
             14: '0.875rem',
             16: '1rem',
             18: '1.125rem',
@@ -13,15 +14,18 @@ module.exports = {
             22: '1.375rem',
             23: '1.438rem',
             24: '1.5rem',
+            25: '1.5625rem',
             28: '1.75rem',
             30: '1.875rem',
             32: '2rem',
             34: '2.125rem',
+            40: '2.5rem',
             44: '2.75rem',
             50: '3.125rem',
             58: '3.625rem',
             80: '5rem',
             90: '5.625rem',
+            96: '6rem',
         },
         letterSpacing: {
             link: '-0.3px',
@@ -30,6 +34,7 @@ module.exports = {
             text: '-0.35px',
         },
         lineHeight: {
+            '0': 'none',
             '133%': '133%',
         },
         borderRadius: {
@@ -67,6 +72,8 @@ module.exports = {
                 'text-accent': '#3AA7CD',
                 'text-footer-accent': '#31CAFF',
                 'text-gray': '#8D8D8D',
+                'text-pogoda-gray': '#939CB0',
+                'text-pogoda-blue': '#4793FF',
                 'text-blog': '#596569',
                 'text-form': '#172E49',
                 'text-found': '#6D8C9D',
@@ -87,6 +94,7 @@ module.exports = {
             maxWidth: { yachtTitle: '28.88rem' },
             width: { behind: 'var(--padding-behind)' },
             boxShadow: {
+                weatherBlock: '2px 5px 25px -3px rgba(180, 180, 180, 0.25)',
                 forms: '0px 18px 41px 0px rgba(0, 0, 0, 0.10)',
             },
         },
