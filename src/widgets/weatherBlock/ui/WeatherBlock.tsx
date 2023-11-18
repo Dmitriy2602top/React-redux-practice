@@ -17,7 +17,7 @@ export const WeatherBlock = () => {
     };
 
     return (
-        <div className='container mt-8'>
+        <div className='container pt-8'>
             <div className='grid grid-cols-3 gap-12'>
                 <div className='bg-white rounded-4 grid-span-1 flex-col p-5'>
                     <h2 className='text-24 font-700'>Выберите город</h2>
