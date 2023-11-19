@@ -1,4 +1,4 @@
-import { type ChangeEvent, MouseEvent, useState } from 'react';
+import { type ChangeEvent, useState } from 'react';
 import { WeatherDescription } from 'entities/weatherDescription';
 import { WeatherThisDay } from 'entities/weatherThisDay';
 import { WeatherWickDay } from 'entities/weatherWick';

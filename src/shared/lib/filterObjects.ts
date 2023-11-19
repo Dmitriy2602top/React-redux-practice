@@ -1,6 +1,6 @@
-import { type Data } from 'shared/models/types';
+import { type DataFilters, type Data } from 'shared/models/types';
 
-export function filterObject(mainObject: Data, filtersObject: Data) {
+export function filterObject(mainObject: Data, filtersObject: DataFilters) {
     let resultFilter = false;
 
     if (

@@ -17,7 +17,6 @@ export const FeaturedYachts = () => {
         setShipsFilters(ships && [...ships].filter(ship => filterObject(ship, searchParametersShips)));
     }, [searchParametersShips]);
 
-    console.log(shipsFilters, searchParametersShips);
     return (
         <div className='my-5 container grid grid-cols-4 gap-6'>
             <div className='col-span-1'>
@@ -36,6 +35,13 @@ export const FeaturedYachts = () => {
             </div>
             <div className='grid col-span-3 gap-6'>
                 <div className='flex gap-6 justify-between flex-col'>
+                    {shipsFilters?.length === 0 ? (
+                        <div className='flex justify-center'>
+                            <h3 className='uppercase text-text-accent font-600 text-25'>ships not found</h3>
+                        </div>
+                    ) : (
+                        <></>
+                    )}
                     {shipsFilters !== undefined ? (
                         <>
                             <div className='grid-cols-3 grid gap-6'>
@@ -43,11 +49,21 @@ export const FeaturedYachts = () => {
                             </div>
                             <Button className='text-text-accent w-full grow-0' type={ButtonType.view}>
                                 View all
-                            </Button>{' '}
+                            </Button>
                         </>
                     ) : (
-                        <></>
+                        ships && (
+                            <>
+                                <div className='grid-cols-3 grid gap-6'>
+                                    <ChoiceCardShips cards={ships} />
+                                </div>
+                                <Button className='text-text-accent w-full grow-0' type={ButtonType.view}>
+                                    View all
+                                </Button>
+                            </>
+                        )
                     )}
+
                     {isError ? (
                         <h1 className='text-red-500 text-center text-22'>Не удается получить доступ к сайту</h1>
                     ) : (

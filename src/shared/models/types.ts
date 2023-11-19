@@ -26,7 +26,13 @@ export interface Data {
     length: number;
     Crew: number;
 }
-
+export interface DataFilters {
+    YachtType: string | undefined;
+    GuestSleeping: number | undefined;
+    budget: number | undefined;
+    length: number | undefined;
+    Crew: number | undefined;
+}
 interface WeatherPrognoz {
     main: {
         temp: number;
