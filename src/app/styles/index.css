@@ -1,3 +1,20 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+    :root {
+        --padding-behind: calc((100vw - 84rem) / 2);
+    }
+
+    body {
+        @apply bg-bg-primary text-16;
+    }
+    /* * {
+        @apply border-red-600 border;
+    } */
+
+    .container {
+        @apply max-w-[1440px];
+    }
+}
