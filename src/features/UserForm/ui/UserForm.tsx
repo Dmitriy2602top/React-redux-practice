@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { type FC } from 'react';
 import { Controller, useForm } from 'react-hook-form';
-import { selectParameters } from 'shared/assets/selectParameters/selectParameters';
+import { selectParameters } from 'features/SearchForm/config/selectParameters';
 import { type PropsOf } from 'shared/lib';
 import { MySelect } from 'shared/ui';
 import { Button, ButtonType } from 'shared/ui/button/Button';
@@ -28,10 +28,18 @@ export const UserForm: FC<UserFormProps> = ({ className }) => {
     };
 
     return (
-        <div className={classNames('w-full px-7 py-5 rounded-4 shadow-forms translate-y-5 bg-white', className)}>
+        <div
+            className={classNames(
+                'w-full px-7 py-5 rounded-4 shadow-forms translate-y-5 md:translate-y-0 bg-white',
+                className
+            )}
+        >
             <h4 className='text-btn-blue text-center font-700 text-24 uppercase'>REQUEST A PACKAGE</h4>
-            <form onSubmit={handleSubmit(onSubmit)} className='grid mt-5 text-text-form gap-3 grid-cols-2'>
-                <div>
+            <form
+                onSubmit={handleSubmit(onSubmit)}
+                className='grid mt-5 text-text-form gap-3 grid-cols-2 md:grid-cols-1 md:gap-1'
+            >
+                <div className='md:col-span-2'>
                     <p>
                         <span className='text-btn-blue'>*</span>Name
                     </p>
@@ -41,7 +49,7 @@ export const UserForm: FC<UserFormProps> = ({ className }) => {
                         render={({ field }) => <MyInput {...field} className='mt-3 w-full' />}
                     />
                 </div>
-                <div>
+                <div className='md:col-span-2'>
                     <p>
                         <span className='text-btn-blue'>*</span>E-mail
                     </p>
@@ -51,7 +59,7 @@ export const UserForm: FC<UserFormProps> = ({ className }) => {
                         render={({ field }) => <MyInput {...field} className='mt-3 w-full' />}
                     />
                 </div>
-                <div>
+                <div className='md:col-span-2'>
                     <p>
                         <span className='text-btn-blue'>*</span>Phone
                     </p>
@@ -61,7 +69,7 @@ export const UserForm: FC<UserFormProps> = ({ className }) => {
                         render={({ field }) => <MyInput {...field} className='mt-3 w-full' />}
                     />
                 </div>
-                <div>
+                <div className='md:col-span-2'>
                     <p>
                         <span className='text-btn-blue'>*</span>Yacht Type
                     </p>
@@ -77,7 +85,7 @@ export const UserForm: FC<UserFormProps> = ({ className }) => {
                         )}
                     />
                 </div>
-                <div>
+                <div className='md:col-span-2'>
                     <p>
                         <span className='text-btn-blue'>*</span>Number of Days
                     </p>
@@ -93,7 +101,7 @@ export const UserForm: FC<UserFormProps> = ({ className }) => {
                         )}
                     />
                 </div>
-                <div>
+                <div className='md:col-span-2'>
                     <p>
                         <span className='text-btn-blue'>*</span>Number of Guests
                     </p>

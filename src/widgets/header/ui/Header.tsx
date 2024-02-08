@@ -12,7 +12,7 @@ export const Header: FC = () => {
                     <img src={Logo} />
                     <img src={LogoName} alt='HORIZON CRUISES' />
                 </div>
-                <div className='flex gap-6 text-text-header'>
+                <div className='flex gap-6 text-text-header md:hidden'>
                     <Link className='hover:text-text-header-hover' to='/'>
                         Home
                     </Link>
@@ -29,7 +29,7 @@ export const Header: FC = () => {
                         Contacts
                     </Link>
                 </div>
-                <div className='rounded-4 flex gap-2 p-2 border border-btn-black text-btn-black'>
+                <div className='rounded-4 flex gap-2 p-2 border border-btn-black md:text-12 text-btn-black'>
                     <span>EN</span> <img src={Gal} />
                 </div>
             </div>

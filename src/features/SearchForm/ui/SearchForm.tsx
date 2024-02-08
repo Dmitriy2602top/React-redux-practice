@@ -1,11 +1,11 @@
 import classNames from 'classnames';
 import { type FC } from 'react';
 import { Controller, useForm } from 'react-hook-form';
-import { selectParameters } from 'shared/assets/selectParameters/selectParameters';
 import { type PropsOf } from 'shared/lib';
 import { useAppDispatch } from 'shared/lib/hooks/reduxHooks';
 import { type Data } from 'shared/models/types';
 import { Button, ButtonType, MySelect } from 'shared/ui';
+import { selectParameters } from '../config/selectParameters';
 import { dataChange } from '../models/SearchSlice';
 
 interface SearchFormJson extends Data {}

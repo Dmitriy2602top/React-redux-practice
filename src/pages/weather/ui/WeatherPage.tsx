@@ -8,4 +8,5 @@ const WeatherPage: FC = () => {
         </div>
     );
 };
+
 export default WeatherPage;

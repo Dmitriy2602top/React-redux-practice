@@ -7,8 +7,8 @@ export const SliderItem: FC<ISlider> = ({ description, image, ...props }) => {
         <div {...props}>
             <img className='rounded-4' src={image} />
             <div className='mt-5 flex flex-col justify-between px-2'>
-                <p className='text-text-blog'>{description}</p>
-                <Button className='mt-2 self-start' type={ButtonType.blank}>
+                <p className='text-text-blog md:text-12'>{description}</p>
+                <Button className='mt-2 md:text-14 self-start' type={ButtonType.blank}>
                     More
                 </Button>
             </div>

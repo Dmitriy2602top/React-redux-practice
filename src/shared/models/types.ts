@@ -42,7 +42,7 @@ interface WeatherPrognoz {
         pressure: number;
     };
     rain: { h: number };
-    weather: [{ description: string }];
+    weather: [{ description: string; icon: string }];
     wind: { speed: number };
     dt_txt: string;
 }

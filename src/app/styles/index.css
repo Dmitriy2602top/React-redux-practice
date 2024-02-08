@@ -15,6 +15,6 @@
     } */
 
     .container {
-        @apply max-w-[1440px];
+        @apply max-w-[1408px];
     }
 }
