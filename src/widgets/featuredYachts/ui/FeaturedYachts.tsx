@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+/* eslint-disable @typescript-eslint/no-confusing-void-expression */
+import { useEffect, useMemo, useState } from 'react';
 import { ChoiceCardShips } from 'entities/choiceCardShips/ui/ChoiceCardShips';
 import SearchForm from 'features/SearchForm/ui/SearchForm';
 import { apiService } from 'shared/api/apiService';
@@ -12,14 +13,17 @@ export const FeaturedYachts = () => {
     const { data: ships, isLoading: loadingShips, isError } = apiService.useFetchAllShipsQuery(6);
     const { data: searchParametersShips } = useAppSelector(state => state.SearchReducer);
     const [shipsFilters, setShipsFilters] = useState<ICard[]>();
-
+    const changeShips = useMemo(() => {
+        const allShips = ships && [...ships].filter(ship => filterObject(ship, searchParametersShips));
+        return allShips;
+    }, [searchParametersShips]);
     useEffect(() => {
-        setShipsFilters(ships && [...ships].filter(ship => filterObject(ship, searchParametersShips)));
+        setShipsFilters(changeShips);
     }, [searchParametersShips]);
 
     return (
         <div className='my-5 container grid grid-cols-4 gap-6'>
-            <div className='col-span-1'>
+            <div className='col-span-1 md:col-span-4'>
                 <SearchForm />
                 <div className='relative mt-6'>
                     <div className='flex pl-7 gap-72 pr-9 py-9 flex-col text-white justify-between'>
@@ -33,7 +37,7 @@ export const FeaturedYachts = () => {
                     <img src={Map} className='absolute w-full object-cover rounded-4 h-full -z-10 top-0 left-0' />
                 </div>
             </div>
-            <div className='grid col-span-3 gap-6'>
+            <div className='grid col-span-3 md:col-span-4 gap-6'>
                 <div className='flex gap-6 justify-between flex-col'>
                     {shipsFilters?.length === 0 ? (
                         <div className='flex justify-center'>
@@ -44,7 +48,7 @@ export const FeaturedYachts = () => {
                     )}
                     {shipsFilters !== undefined ? (
                         <>
-                            <div className='grid-cols-3 grid gap-6'>
+                            <div className='grid-cols-3 lg:grid-cols-2 md:grid-cols-1 grid gap-6'>
                                 <ChoiceCardShips cards={shipsFilters} />
                             </div>
                             <Button className='text-text-accent w-full grow-0' type={ButtonType.view}>
@@ -54,7 +58,7 @@ export const FeaturedYachts = () => {
                     ) : (
                         ships && (
                             <>
-                                <div className='grid-cols-3 grid gap-6'>
+                                <div className='grid-cols-3 lg:grid-cols-2 md:grid-cols-1 grid gap-6'>
                                     <ChoiceCardShips cards={ships} />
                                 </div>
                                 <Button className='text-text-accent w-full grow-0' type={ButtonType.view}>
@@ -65,7 +69,9 @@ export const FeaturedYachts = () => {
                     )}
 
                     {isError ? (
-                        <h1 className='text-red-500 text-center text-22'>Не удается получить доступ к сайту</h1>
+                        <h1 className='text-red-500 text-center text-22'>
+                            Не удается получить доступ к сайту или не запущен сервер
+                        </h1>
                     ) : (
                         <></>
                     )}

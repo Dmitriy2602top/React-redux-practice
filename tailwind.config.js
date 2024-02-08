@@ -2,7 +2,7 @@
 module.exports = {
     content: ['./src/**/*.{js,ts,jsx,tsx}', './public/index.html'],
     theme: {
-        container: { center: true, padding: '3rem' },
+        container: { center: true, padding: '2rem' },
         screens: { xxl: { max: '1440px' }, lg: { max: '992px' }, md: { max: '768px' }, sm: { max: '480px' } },
         fontSize: {
             12: '0.75rem',

@@ -9,9 +9,7 @@ export const router = createBrowserRouter([
         path: '/',
         element: (
             <Layout>
-                <Suspense fallback={<div>Loaiding...</div>}>
-                    <Outlet />
-                </Suspense>
+                <Outlet />
             </Layout>
         ),
         children: [

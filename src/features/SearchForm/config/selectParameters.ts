@@ -1,4 +1,4 @@
-const NumberGeneratorMassive = (num: number) => {
+export const NumberGeneratorMassive = (num: number) => {
     const arr = [];
     for (let i = 0; i <= num; i++) {
         arr.push({ key: i, value: i });
@@ -13,10 +13,6 @@ interface SelectParameters {
     numberGuests: Array<{ key: number; value: number | undefined }>;
     length: Array<{ key: string; value: number | undefined }>;
     crew: Array<{ key: number; value: number | undefined }>;
-}
-
-interface SelectParametersCity {
-    city: Array<{ key: string; value: string }>;
 }
 
 export const selectParameters: SelectParameters = {
@@ -42,12 +38,4 @@ export const selectParameters: SelectParameters = {
         { key: '120m', value: 120 },
     ],
     crew: NumberGeneratorMassive(5),
-};
-
-export const selectParametersCity: SelectParametersCity = {
-    city: [
-        { key: 'Москва', value: 'moscow' },
-        { key: 'Воронеж', value: 'voronej' },
-        { key: 'Тамбов', value: 'tambov' },
-    ],
 };

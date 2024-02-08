@@ -23,8 +23,8 @@ export const YachtCharter: FC<YachtCharterProps> = ({ title, topText, bottomText
             <div className='absolute flex bottom-0  left-0 -z-10 w-full'>
                 <div className='grow bg-bg-primary'></div>
                 <div className='grid container bg-bg-primary gap-6 shrink grid-cols-4 '>
-                    <div className='col-span-1 bg-black text-white uppercase text-30 py-5 font-700 text-center'>
-                        <h3>FEATURED YACHTS</h3>
+                    <div className='col-span-1 bg-black md:bg-transparent text-white uppercase text-30 py-5 font-700 text-center'>
+                        <h3 className='md:hidden'>FEATURED YACHTS</h3>
                     </div>
                     <div className='col-span-3 flex items-end bg-bg-primary text-text-found font-600'>
                         <p>Found 25 yachts</p>
@@ -32,13 +32,13 @@ export const YachtCharter: FC<YachtCharterProps> = ({ title, topText, bottomText
                 </div>
                 <div className='grow bg-bg-primary'></div>
             </div>
-            <div className='flex justify-between container pt-14'>
-                <div className='flex flex-col gap-3 max-w-yachtTitle text-white'>
+            <div className='flex justify-between md:items-center md:gap-11 md:w-full md:flex-wrap md:flex-col container pt-14'>
+                <div className='flex flex-col gap-3 md:text-center max-w-yachtTitle md:max-w-full text-white'>
                     <h4 className='text-18 font-700 uppercase leading-133%'>{topText}</h4>
-                    <h1 className='text-58 font-700 uppercase'>{title}</h1>
+                    <h1 className='text-58 font-700 sm:text-[11vw] uppercase'>{title}</h1>
                     <p className='text-18 font-600 leading-133%'>{bottomText}</p>
                 </div>
-                <div className='gap-11 flex flex-col items-center'>
+                <div className='gap-11 md:w-full flex flex-col items-center'>
                     <div className='flex flex-col gap-5'>
                         <h5 className='text-text-secondary text-center'>Write to US</h5>
                         <div className='flex gap-5'>

@@ -37,7 +37,9 @@ export const WeatherThisDay: FC<WeatherThisDayProps> = ({
                     <h3 className='text-96 font-500 leading-0 text-text-pogoda-blue'>{gradus}&deg;</h3>
                     <p className='capitalize text-black font-400 text-40'>{thisDay}</p>
                 </div>
-                <img src={image} />
+                <div className='w-24'>
+                    <img className='w-full mt-4' src={image} />
+                </div>
             </div>
             <div className='mt-6'>
                 <p className='text-25 text-text-pogoda-gray font-400'>
